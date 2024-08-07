@@ -1,0 +1,76 @@
+.certifiedLogoSize {
+  width: 90px;
+  height: 80px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.buttonContainer :hover {
+  opacity: 0.5;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+
+  cursor: pointer;
+}
+
+.rightArrow {
+  border: solid white;
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 8px;
+
+  margin: auto;
+
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.buttonContainer > :first-child {
+  margin: auto;
+
+  border-right: 0px;
+  padding: 25px 20px;
+
+  font-size: 25px;
+  font-weight: bolder;
+
+  color: white;
+
+  text-transform: uppercase;
+
+  background-color: #2479c1;
+}
+
+@media (min-width: 370px) {
+  .gridWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+
+    background-color: #000c2f;
+  }
+  .gridWrapper > h1 {
+    text-transform: capitalize;
+    color: white;
+  }
+  .gridWrapper > h2 {
+    text-transform: capitalize;
+    color: white;
+  }
+  .flexWrapper {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 40px;
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+}

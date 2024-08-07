@@ -6,10 +6,6 @@ export const BurgerMenu = ({ navRef }) => {
   const closeIconRef = useRef(null);
 
   const MenuClick = () => {
-    console.log("Menu Click");
-    console.log("navRef:", navRef.current);
-    console.log("menuIconRef:", menuIconRef.current);
-    console.log("closeIconRef:", closeIconRef.current);
     if (navRef.current && menuIconRef.current && closeIconRef.current) {
       navRef.current.classList.add(style.navVisible);
       menuIconRef.current.classList.add(style.menuHidden);

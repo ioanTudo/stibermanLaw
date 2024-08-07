@@ -1,7 +1,5 @@
+import { TemplatePageHome } from "../../components/template/pageTemplate";
+
 export const Home = () => {
-  return (
-    <div>
-      <h1>home</h1>
-    </div>
-  );
+  return <TemplatePageHome />;
 };

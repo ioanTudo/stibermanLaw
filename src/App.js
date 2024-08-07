@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { AboutPage } from "./pages/about/about";
@@ -15,6 +14,7 @@ import { Header } from "./components/header/header";
 
 function App() {
   const navRef = useRef(null);
+
   return (
     <BrowserRouter>
       <Header navRef={navRef} />

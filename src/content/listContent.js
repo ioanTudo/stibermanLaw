@@ -1,4 +1,6 @@
-import path from "path";
+import heroHomePage from "../images/hero/stibermanHero.jpg";
+import Logo1 from "../images/logos/certifiedLogo1.png";
+import Logo2 from "../images/logos/certifiedLogo2.png";
 
 export const NavList = [
   {
@@ -40,5 +42,80 @@ export const NavList = [
     id: 7,
     content: "contact us",
     path: "/contact",
+  },
+];
+
+export const HeroData = [
+  {
+    idHero: 0,
+    pageHero: heroHomePage,
+  },
+];
+
+export const HomePageContent = [
+  {
+    id: 0,
+    heading: "florida bankruptcy attorney",
+    subHeading: "the florida bankruptcy lawyers at stiberman law can help you",
+    certifiedLogo1: Logo1,
+    certifiedLogo2: Logo2,
+  },
+];
+
+export const FeedbackContainerData = [
+  {
+    id: 0,
+    starColor: "red",
+    heading: "what people are saying about us ",
+    rating: 5.0,
+    user: "adam",
+    content:
+      "Robert and the team at Stiberman Law are truly exceptional. I was faced with the daunting task of navigating bankruptcy, and from the moment I contacted them, I knew I was in good hands ",
+  },
+
+  {
+    id: 1,
+    starColor: "red",
+    heading: "what people are saying about us ",
+    rating: 3.0,
+    user: "adam",
+    content:
+      "Robert and the team at Stiberman Law are truly exceptional. I was faced with the daunting task of navigating bankruptcy, and from the moment I contacted them, I knew I was in good hands ",
+  },
+  {
+    id: 2,
+    starColor: "red",
+    heading: "what people are saying about us ",
+    rating: 4.0,
+    user: "adam",
+    content:
+      "Robert and the team at Stiberman Law are truly exceptional. I was faced with the daunting task of navigating bankruptcy, and from the moment I contacted them, I knew I was in good hands ",
+  },
+  {
+    id: 3,
+    starColor: "red",
+    heading: "what people are saying about us ",
+    rating: 3.0,
+    user: "adam",
+    content:
+      "Robert and the team at Stiberman Law are truly exceptional. I was faced with the daunting task of navigating bankruptcy, and from the moment I contacted them, I knew I was in good hands ",
+  },
+  {
+    id: 4,
+    starColor: "red",
+    heading: "what people are saying about us ",
+    rating: 2.0,
+    user: "adam",
+    content:
+      "Robert and the team at Stiberman Law are truly exceptional. I was faced with the daunting task of navigating bankruptcy, and from the moment I contacted them, I knew I was in good hands ",
+  },
+  {
+    id: 5,
+    starColor: "red",
+    heading: "what people are saying about us ",
+    rating: 5.0,
+    user: "adam",
+    content:
+      "Robert and the team at Stiberman Law are truly exceptional. I was faced with the daunting task of navigating bankruptcy, and from the moment I contacted them, I knew I was in good hands ",
   },
 ];
