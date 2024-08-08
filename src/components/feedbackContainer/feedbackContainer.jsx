@@ -1,50 +1,79 @@
-import { FeedbackContainerData } from "../../content/listContent";
+import React, { useRef, useState, useEffect } from "react";
+import { FeedbackContainerData } from "../../content/listContent.js";
 import { FeedbackContainerDisplay } from "./feedbackContainerDisplay";
 import style from "./feedbackContainer.module.css";
-import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
-export const FeedbackContainer = ({ feedbackDiv }) => {
+export const FeedbackContainer = () => {
   const feedbackContainerRefs = useRef([]);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextTestimonial = () => {
-    const newIndex = (currentIndex + 1) % FeedbackContainerData.length;
+  const updateActiveTestimonial = () => {
+    feedbackContainerRefs.current.forEach((item, index) => {
+      if (item) {
+        item.classList.toggle(style.active, index === currentIndex);
+      }
+    });
+  };
 
-    setCurrentIndex(newIndex);
-    console.log("clicked", newIndex);
+  const nextTestimonial = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex + 1) % FeedbackContainerData.length
+    );
   };
 
   const prevTestimonial = () => {
-    const newIndex =
-      (currentIndex - 1 + FeedbackContainerData.length) %
-      FeedbackContainerData.length;
-    setCurrentIndex(newIndex);
-
-    console.log("clicked", newIndex);
+    setCurrentIndex(
+      (prevIndex) =>
+        (prevIndex - 1 + FeedbackContainerData.length) %
+        FeedbackContainerData.length
+    );
   };
 
+  useEffect(() => {
+    updateActiveTestimonial();
+  }, [currentIndex]);
+
   return (
-    <div className={style.feedbackContainer}>
-      {FeedbackContainerData.map((item, id) => (
-        <FeedbackContainerDisplay
-          ref={(e) => (feedbackContainerRefs.current[id] = e)}
-          key={id}
-          user={item.user}
-          role={item.role}
-          text={item.text}
-          rating={item.rating}
-          starColor={item.starColor}
-          content={item.content}
-        />
-      ))}
-      <div className={style.buttonContainer}>
-        <button onClick={nextTestimonial} className={style.nextButton}>
-          nxt
-        </button>
-        <button onClick={prevTestimonial} className={style.prevButton}>
-          prev
-        </button>
+    <>
+      <div style={{ textAlign: "center" }}>
+        <h1 style={{ textTransform: "capitalize" }}>
+          what people are saying about us
+        </h1>
       </div>
-    </div>
+      <div className={style.feedbackContainer}>
+        {FeedbackContainerData.map((item, id) => (
+          <FeedbackContainerDisplay
+            ref={(el) => (feedbackContainerRefs.current[id] = el)}
+            key={id}
+            user={item.user}
+            role={item.role}
+            content={item.content}
+            rating={item.rating}
+            starColor={item.starColor}
+          />
+        ))}
+        <div className={style.buttonContainer}>
+          <button onClick={prevTestimonial} className={style.prevButton}>
+            <span></span>
+          </button>
+          <button onClick={nextTestimonial} className={style.nextButton}>
+            <span></span>
+          </button>
+        </div>
+        <div className={style.gridWrapper}>
+          <Link to={"/testimonials"}>
+            <button style={{ backgroundColor: "#000c2f" }}>
+              <h2>view all testimonials</h2>
+            </button>
+          </Link>
+          <Link to={"/"}>
+            <button style={{ backgroundColor: "#2479c1" }}>
+              <h2>leave us a review</h2>
+            </button>
+          </Link>
+        </div>
+      </div>
+    </>
   );
 };

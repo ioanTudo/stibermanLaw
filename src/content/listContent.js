@@ -65,7 +65,7 @@ export const HomePageContent = [
 export const FeedbackContainerData = [
   {
     id: 0,
-    starColor: "red",
+    starColor: "#2479c1",
     heading: "what people are saying about us ",
     rating: 5.0,
     user: "adam",
@@ -75,46 +75,46 @@ export const FeedbackContainerData = [
 
   {
     id: 1,
-    starColor: "red",
+    starColor: "#2479c1",
     heading: "what people are saying about us ",
     rating: 3.0,
-    user: "adam",
+    user: "rares",
     content:
       "Robert and the team at Stiberman Law are truly exceptional. I was faced with the daunting task of navigating bankruptcy, and from the moment I contacted them, I knew I was in good hands ",
   },
   {
     id: 2,
-    starColor: "red",
+    starColor: "#2479c1",
     heading: "what people are saying about us ",
     rating: 4.0,
-    user: "adam",
+    user: "marcela",
     content:
       "Robert and the team at Stiberman Law are truly exceptional. I was faced with the daunting task of navigating bankruptcy, and from the moment I contacted them, I knew I was in good hands ",
   },
   {
     id: 3,
-    starColor: "red",
+    starColor: "#2479c1",
     heading: "what people are saying about us ",
     rating: 3.0,
-    user: "adam",
+    user: "ioan",
     content:
       "Robert and the team at Stiberman Law are truly exceptional. I was faced with the daunting task of navigating bankruptcy, and from the moment I contacted them, I knew I was in good hands ",
   },
   {
     id: 4,
-    starColor: "red",
+    starColor: "#2479c1",
     heading: "what people are saying about us ",
     rating: 2.0,
-    user: "adam",
+    user: "puc",
     content:
       "Robert and the team at Stiberman Law are truly exceptional. I was faced with the daunting task of navigating bankruptcy, and from the moment I contacted them, I knew I was in good hands ",
   },
   {
     id: 5,
-    starColor: "red",
+    starColor: "#2479c1",
     heading: "what people are saying about us ",
     rating: 5.0,
-    user: "adam",
+    user: "bae",
     content:
       "Robert and the team at Stiberman Law are truly exceptional. I was faced with the daunting task of navigating bankruptcy, and from the moment I contacted them, I knew I was in good hands ",
   },
