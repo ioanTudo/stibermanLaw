@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
-import { FeedbackContainerData } from "../../content/listContent.js";
-import { FeedbackContainerDisplay } from "./feedbackContainerDisplay";
+import { FeedbackContainerData } from "../../listContent.js";
+import { FeedbackContainerDisplay } from "./feedbackContainerDisplay.jsx";
 import style from "./feedbackContainer.module.css";
 import { Link } from "react-router-dom";
 
@@ -35,10 +35,14 @@ export const FeedbackContainer = () => {
   }, [currentIndex]);
 
   return (
-    <>
+    <div className={style.feedbackContainerWrapper}>
       <div style={{ textAlign: "center" }}>
-        <h1 style={{ textTransform: "capitalize" }}>
-          what people are saying about us
+        <h1
+          className={style.headerFeedback}
+          style={{ textTransform: "capitalize" }}
+        >
+          what people are <span style={{ color: "#2479c1" }}>saying</span> about
+          us
         </h1>
       </div>
       <div className={style.feedbackContainer}>
@@ -64,16 +68,16 @@ export const FeedbackContainer = () => {
         <div className={style.gridWrapper}>
           <Link to={"/testimonials"}>
             <button style={{ backgroundColor: "#000c2f" }}>
-              <h2>view all testimonials</h2>
+              view all testimonials
             </button>
           </Link>
           <Link to={"/"}>
             <button style={{ backgroundColor: "#2479c1" }}>
-              <h2>leave us a review</h2>
+              leave us a review
             </button>
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 };

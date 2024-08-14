@@ -58,10 +58,16 @@
   .gridWrapper > h1 {
     text-transform: capitalize;
     color: white;
+    font-family: "Unna", serif;
   }
   .gridWrapper > h2 {
     text-transform: capitalize;
     color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin: auto;
+    padding: 25px;
+    width: 20rem;
   }
   .flexWrapper {
     display: flex;

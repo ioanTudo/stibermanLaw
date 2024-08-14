@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
 import style from "./feedbackContainer.module.css";
-import "../../content/listContent";
-import googleminiLogo from "../../images/logos/googleMiniLogo.png";
+import "../../listContent";
+import googleminiLogo from "../../../images/logos/googleMiniLogo.png";
 
 export const FeedbackContainerDisplay = forwardRef(
   ({ user, content, rating, starColor }, ref) => {
