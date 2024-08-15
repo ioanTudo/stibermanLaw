@@ -4,6 +4,7 @@ import { FeedbackContainer } from "../../content/home/feedbackContainer/feedback
 import { Hero } from "../hero/hero";
 import { VerifiedGoogleTestimonialContainer } from "../../content/home/verifiedGoogleTestiomials/verifiedGoogleTestimonialContainer";
 import { DescriptionContainer } from "../../content/home/descriptionContainer/descriptionContainer";
+import { StibermanTestimonialContainer } from "../../content/home/stibermanTestimonialContainer/stibermanTestimonialContainer";
 
 export const TemplatePageHome = () => {
   return (
@@ -13,6 +14,7 @@ export const TemplatePageHome = () => {
       <FeedbackContainer />
       <VerifiedGoogleTestimonialContainer />
       <DescriptionContainer />
+      <StibermanTestimonialContainer />
     </>
   );
 };

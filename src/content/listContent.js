@@ -2,6 +2,7 @@ import heroHomePage from "../images/hero/stibermanHero.jpg";
 import Logo1 from "../images/logos/certifiedLogo1.png";
 import Logo2 from "../images/logos/certifiedLogo2.png";
 import googleVerifiedLogo from "../images/logos/verifiedGoogle.png";
+import circleStibermanLogo from "../images/logos/circularLogoStib.png";
 
 export const NavList = [
   {
@@ -169,5 +170,16 @@ export const DescriptionFormData = [
     headingForm: "request a free consultation",
     subHeadingForm:
       "Speaking to our law firm is always 100% confidential. We do our best to respond to inquiries in under 24 hours.",
+  },
+];
+
+export const StibermanTestimonialData = [
+  {
+    id: 0,
+    user: "robert a. stiberman",
+    role: "bankruptcy attorney",
+    circleLogo: circleStibermanLogo,
+    testimonial:
+      "No matter how difficult your situation may be, Stiberman Law has the resources and experience to manage your case.",
   },
 ];

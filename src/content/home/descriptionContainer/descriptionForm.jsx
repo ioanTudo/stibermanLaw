@@ -12,7 +12,7 @@ export const DescriptionFormDisplay = forwardRef(
           <input type="text" value={"last name"} />
           <input type="text" value={"phone number"} />
           <input type="text" value={"email adress"} />
-          <textarea value={"how can we help you?"} name=""></textarea>
+          <textarea value={"how can we help you?"}></textarea>
           <button>get free consultation</button>
         </div>
       </div>
