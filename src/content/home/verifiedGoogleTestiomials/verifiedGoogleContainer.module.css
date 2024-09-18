@@ -1,0 +1,58 @@
+.verifiedGoogleWrapper {
+  background-color: #0b2143;
+  margin: auto;
+  position: relative;
+  display: grid;
+  padding: 40px 10px 40px 10px;
+  height: 55vh;
+}
+
+.verifiedGoogleContentWrapper {
+  display: grid;
+  margin: auto;
+
+  text-align: center;
+  background-color: #0c2448;
+
+  color: white;
+
+  height: fit-content;
+}
+.contentContainer {
+  margin: auto;
+  justify-self: center;
+  vertical-align: middle;
+  align-self: center;
+  padding: 20px;
+}
+
+.contentContainer button {
+  text-transform: uppercase;
+  border-radius: 45px;
+  padding: 25px;
+  border: 0px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(36, 121, 193);
+  color: white;
+}
+
+.subHeadingCounter {
+  font-size: 25px;
+  display: inline-block;
+}
+
+.subHeadingCounter::after {
+  content: "";
+  width: 25%;
+  height: 4px;
+
+  background-color: rgb(36, 121, 193);
+  margin: 20px auto auto auto;
+
+  display: block;
+}
+.contentContainer p {
+  margin-top: 0;
+}

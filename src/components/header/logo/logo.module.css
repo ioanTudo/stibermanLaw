@@ -1,0 +1,13 @@
+@media (min-width: 375px) {
+  .navLogo {
+    width: 150px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navLogo {
+    width: 300px;
+    height: auto;
+  }
+}

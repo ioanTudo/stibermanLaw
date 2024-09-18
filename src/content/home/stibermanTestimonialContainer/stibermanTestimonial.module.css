@@ -1,0 +1,61 @@
+@media (min-width: 375px) {
+  .gridWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 15px;
+    margin: auto;
+  }
+  .testimonialContent {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #2479c1;
+    padding: 10px;
+    margin: auto;
+  }
+  .testimonialContent h1 {
+    font-family: "Unna", serif;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: left;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    font-size: 25px;
+  }
+  .stibermanCircleLogo {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    margin: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    border: 3px solid grey;
+    border-style: outset;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .userInfoContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  .userInfoText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .userInfoText h2 {
+    margin-bottom: 0;
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  .userInfoText span {
+    color: #2479c1;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}

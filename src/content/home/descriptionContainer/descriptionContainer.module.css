@@ -1,0 +1,104 @@
+@media (min-width: 375px) {
+  .displayBlockButton {
+    display: block;
+    margin: auto;
+    border-radius: 45px;
+    padding: 25px;
+    border: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: #2479c1;
+    color: white;
+  }
+  .displayNoneButton {
+    display: none;
+  }
+
+  .descriptionBanner {
+    margin: auto;
+
+    width: 100%;
+  }
+  .descriptionContainer {
+    display: grid;
+    padding: 10px;
+    text-align: left;
+    line-height: 1.6;
+    font-weight: 600;
+  }
+  .descriptionContainer h1 {
+    text-transform: capitalize;
+    font-family: "Unna", serif;
+    font-size: 25px;
+  }
+
+  .descriptionContentContainer > h2 {
+    font-size: 18px;
+    color: #2479c1;
+  }
+  .descriptionFormContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    background-color: #000c2f;
+    color: white;
+  }
+  .descriptionFormContainer h2 {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  .descriptionFormContainer h1 {
+    margin-bottom: 5px;
+  }
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 40px 10px 40px 10px;
+    margin: auto;
+    justify-self: center;
+    max-width: 450px;
+    box-sizing: border-box;
+  }
+  .inputContainer input {
+    padding: 20px;
+    margin: auto;
+    padding-left: 20px;
+    width: 100%;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    box-sizing: border-box;
+  }
+  .inputContainer textarea {
+    margin: auto;
+    justify-self: center;
+    padding: 20px;
+
+    height: 150px;
+    width: 100%;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    box-sizing: border-box;
+  }
+
+  .inputContainer button {
+    padding: 20px 0 20px 0;
+    text-align: center;
+    margin: auto;
+    background-color: #2479c1;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

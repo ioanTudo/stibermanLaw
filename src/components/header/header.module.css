@@ -1,0 +1,16 @@
+.header {
+  background-color: #000c2f;
+}
+@media (min-width: 375px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 70px 40px;
+
+    padding: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    grid-template-columns: 0.5fr 1fr;
+  }
+}
